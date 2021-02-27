@@ -36,7 +36,7 @@ class _AddAccountState extends State<AddAccount> {
                       child: Container(
                         color: Color(0xFFffa73a),
                         height: 170,
-                        width: 235,
+                        width: 200,
                         child: Column(
                           children: [
                             Text('Konto'),
@@ -101,7 +101,7 @@ class _AddAccountState extends State<AddAccount> {
                                 isTapped: () {},
                                 addbutton: Icon(Icons.add),
                                 borderRadius: BorderRadius.circular(40),
-                                groese: 20),
+                               ),
                           ],
                         ),
                       ),

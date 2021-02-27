@@ -7,14 +7,14 @@ class RoundButtonWidget extends StatelessWidget {
     @required this.isTapped,
     @required this.addbutton,
     @required this.borderRadius,
-    @required this.groese,
+
   });
 
   final Color color;
   final Widget addbutton;
   final Function isTapped;
   final BorderRadius borderRadius;
-  final double groese;
+
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class RoundButtonWidget extends StatelessWidget {
       onTap: isTapped,
       child: Container(
         child: addbutton,
-        padding: EdgeInsets.all(groese),
+        padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
           color: color,
           borderRadius: borderRadius,

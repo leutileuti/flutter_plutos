@@ -39,7 +39,8 @@ class _AddAccountState extends State<AddAccount> {
                         width: 200,
                         child: Column(
                           children: [
-                            Text('Konto'),
+                            Text('Konto',
+                                style: TextStyle(fontFamily: 'Überschrift')),
 
                             Padding(
                               padding: const EdgeInsets.all(10.0),
@@ -97,11 +98,11 @@ class _AddAccountState extends State<AddAccount> {
                               style: TextStyle(fontSize: 10),
                             ),
                             RoundButtonWidget(
-                                color: kAddButtonColor,
-                                isTapped: () {},
-                                addbutton: Icon(Icons.add),
-                                borderRadius: BorderRadius.circular(40),
-                               ),
+                              color: kAddButtonColor,
+                              isTapped: () {},
+                              addbutton: Icon(Icons.add),
+                              borderRadius: BorderRadius.circular(40),
+                            ),
                           ],
                         ),
                       ),

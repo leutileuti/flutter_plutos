@@ -62,9 +62,15 @@ flutter:
 
 
   fonts:
-    - family: Griechisch
+    - family: Überschrift
       fonts:
-        - asset: fonts/HERAKLES.TTF
+
+        - asset: fonts/slabo27px-regular.ttf
+
+    - family: Kategorien
+      fonts:
+        - asset: fonts/rhodiumlibre-regular.ttf
+
 
 
   # example:

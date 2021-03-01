@@ -85,6 +85,45 @@ class _InputWindowState extends State<InputWindow> {
                     Text(
                       'Konto hinzufügen',
                       style: TextStyle(
+                        fontFamily: 'Kategorien',
+                        fontSize: 25,
+                      ),
+                    ),
+                    SizedBox(width: 10),
+                    RoundButtonWidget(
+                      color: kAddButtonColor,
+                      addbutton: Icon(Icons.add),
+                      isTapped: () {},
+                    ),
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Text(
+                      'Konto hinzufügen',
+                      style: TextStyle(
+                        fontSize: 25,
+                      ),
+                    ),
+                    SizedBox(width: 10),
+                    RoundButtonWidget(
+                      color: kAddButtonColor,
+                      addbutton: Icon(Icons.add),
+                      isTapped: () {},
+                    ),
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Text(
+                      'Konto hinzufügen',
+                      style: TextStyle(
                         fontSize: 25,
                       ),
                     ),

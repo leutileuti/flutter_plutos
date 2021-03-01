@@ -9,7 +9,7 @@ const kContainerColor = Color(0xFF82a7ff);
 
 //Font
 const kAppBarTextStyle = TextStyle(
-  fontFamily: 'Griechisch',
+  fontFamily: 'Überschrift',
   fontSize: 50,
   color: kAppBarColor,
 );

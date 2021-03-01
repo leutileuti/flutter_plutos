@@ -83,7 +83,7 @@ class _InputWindowState extends State<InputWindow> {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Text(
-                      'Konto hinzufügen',
+                      'Konto hinzufügen !',
                       style: TextStyle(
                         fontFamily: 'Kategorien',
                         fontSize: 25,

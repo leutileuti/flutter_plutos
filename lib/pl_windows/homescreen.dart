@@ -26,38 +26,31 @@ class Homescreen extends StatelessWidget {
 
 
       body:
-      Column(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Column(
-                children: [
-                  Padding(
-                      padding: EdgeInsets.symmetric(vertical: 0, horizontal: 26,)
-                  ),
-                  Expanded(
-                    child: Icon(Icons.search),
-                  ),
-                ],
-              ),
-              Container(
-                child: Text('Suche...'),
-                width: 330,
-                height: 25,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.grey),
+      Container(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Column(
+              children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(vertical: 0, horizontal: 26,)
                 ),
-              )
-            ],
-          ),
-          Row(
-            children: [
-              Divider(color: Colors.red,)
-            ],
-          )
-        ],
+                Expanded(
+                  child: Icon(Icons.search),
+                ),
+              ],
+            ),
+            Container(
+              child: Text('Suche...'),
+              width: 330,
+              height: 25,
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.grey),
+              ),
+            )
+          ],
+        ),
       ),
 
 

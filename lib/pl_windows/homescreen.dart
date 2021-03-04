@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_plutos/constance.dart';
+import 'package:flutter_plutos/pl_buttons/categories.dart';
 
 
 class Homescreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-
       appBar: AppBar(
         title: Text(
           'Plutos',
@@ -23,38 +22,84 @@ class Homescreen extends StatelessWidget {
         ],
       ),
 
-
-
       body:
-      Container(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Column(
-              children: [
-                Padding(
-                  padding: EdgeInsets.symmetric(vertical: 0, horizontal: 26,)
-                ),
-                Expanded(
-                  child: Icon(Icons.search),
-                ),
-              ],
-            ),
-            Container(
-              child: Text('Suche...'),
-              width: 330,
-              height: 25,
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.grey),
+      Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Column(
+                children: <Widget>[
+                  Padding(
+                      padding: EdgeInsets.symmetric(vertical: 5, horizontal: 26,)
+                  ),
+                  Container(
+                    child: Icon(Icons.search),
+                  ),
+                ],
               ),
-            )
-          ],
-        ),
+              Column(
+                children: <Widget>[
+                  Padding(
+                      padding: EdgeInsets.symmetric(vertical: 0, horizontal: 26,)
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      padding: EdgeInsets.all(3),
+                      child: Text('Suche...'),
+                      width: 330,
+                      height: 25,
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey),
+                      ),
+                    ),
+                  ),
+                ],
+              )
+            ],
+          ),
+
+          Row(
+            children: [
+              Column(
+                children: <Widget>[
+                  Container(
+                    width: 428,
+                    height: 0.1,
+                    decoration: BoxDecoration(border: Border.all(color: Colors.grey)),
+                  )
+                ],
+              )
+            ],
+          ),
+
+          Padding(padding: EdgeInsets.symmetric(vertical: 4)),
+
+          Row(
+            children: [
+              Kategorie(categorieBorderRadius: BorderRadius.only(
+                  topLeft: Radius.elliptical(10, 10),
+                  topRight: Radius.elliptical(10, 10),
+                  bottomLeft: Radius.elliptical(10, 10),
+                  bottomRight: Radius.elliptical(10, 10)),
+                  isTapped: (){},
+                  addCategorie: Icon(Icons.fingerprint_rounded)),
+
+              Padding(padding: EdgeInsets.symmetric(vertical: 20, horizontal: 100,)),
+
+              Kategorie(categorieBorderRadius: BorderRadius.only(
+                  topLeft: Radius.elliptical(10, 10),
+                  topRight: Radius.elliptical(10, 10),
+                  bottomLeft: Radius.elliptical(10, 10),
+                  bottomRight: Radius.elliptical(10, 10)),
+                  isTapped: (){},
+                  addCategorie: Icon(Icons.fingerprint))
+            ],
+          ),
+        ],
       ),
-
-
-
     );
   }
 }

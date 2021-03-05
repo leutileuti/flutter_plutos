@@ -1,3 +1,4 @@
+import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_plutos/constance.dart';
 import 'package:flutter_plutos/pl_buttons/categories.dart';
@@ -43,7 +44,7 @@ class Homescreen extends StatelessWidget {
                         bottom: Radius.elliptical(200, 10))),
               )
             ],
-          ),
+          ), //Abrundung AppBar
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             mainAxisSize: MainAxisSize.min,
@@ -68,10 +69,13 @@ class Homescreen extends StatelessWidget {
                     horizontal: 26,
                   )),
                   Container(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(10.0),
                     child: Container(
-                      padding: EdgeInsets.all(3),
-                      child: Text('Suche...'),
+                      padding: EdgeInsets.all(2),
+                      child: Text(
+                        'Suche...',
+                        style: TextStyle(fontFamily: 'Kategorien'),
+                      ),
                       width: 330,
                       height: 25,
                       decoration: BoxDecoration(
@@ -82,7 +86,7 @@ class Homescreen extends StatelessWidget {
                 ],
               )
             ],
-          ),
+          ), //Suchleiste
           Row(
             children: [
               Column(
@@ -96,33 +100,252 @@ class Homescreen extends StatelessWidget {
                 ],
               )
             ],
-          ),
-          Padding(padding: EdgeInsets.symmetric(vertical: 4)),
+          ), //Horizontaler Strich
+          Padding(padding: EdgeInsets.symmetric(vertical: 5)), //Abstandshalter
           Row(
             children: [
-              Kategorie(
-                  categorieBorderRadius: BorderRadius.only(
-                      topLeft: Radius.elliptical(10, 10),
-                      topRight: Radius.elliptical(10, 10),
-                      bottomLeft: Radius.elliptical(10, 10),
-                      bottomRight: Radius.elliptical(10, 10)),
-                  isTapped: () {},
-                  addCategorie: Icon(Icons.fingerprint_rounded)),
-              Padding(
-                  padding: EdgeInsets.symmetric(
-                vertical: 20,
-                horizontal: 100,
-              )),
-              Kategorie(
-                  categorieBorderRadius: BorderRadius.only(
-                      topLeft: Radius.elliptical(10, 10),
-                      topRight: Radius.elliptical(10, 10),
-                      bottomLeft: Radius.elliptical(10, 10),
-                      bottomRight: Radius.elliptical(10, 10)),
-                  isTapped: () {},
-                  addCategorie: Icon(Icons.fingerprint))
+              Column(
+                children: [
+                  Text(
+                    'Aktien',
+                    style: TextStyle(fontFamily: 'Kategorien', fontSize: 20),
+                  ),
+                  Container(
+                    margin:
+                        EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+                    height: 90,
+                    width: 150,
+                    child: Kategorie(
+                        categorieBorderRadius: BorderRadius.only(
+                            topLeft: Radius.elliptical(10, 10),
+                            topRight: Radius.elliptical(10, 10),
+                            bottomLeft: Radius.elliptical(10, 10),
+                            bottomRight: Radius.elliptical(10, 10)),
+                        isTapped: () {},
+                        addCategorie: Icon(Icons.fingerprint_rounded)),
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  Text(
+                    'Aktien',
+                    style: TextStyle(fontFamily: 'Kategorien', fontSize: 20),
+                  ),
+                  Container(
+                    margin:
+                        EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+                    height: 90,
+                    width: 150,
+                    child: Kategorie(
+                        categorieBorderRadius: BorderRadius.only(
+                            topLeft: Radius.elliptical(10, 10),
+                            topRight: Radius.elliptical(10, 10),
+                            bottomLeft: Radius.elliptical(10, 10),
+                            bottomRight: Radius.elliptical(10, 10)),
+                        isTapped: () {},
+                        addCategorie: Image.asset(
+                          'assets/images/Aktien_plutos_images.png',
+                          fit: BoxFit.cover,
+                        )),
+                  ),
+                ],
+              ),
             ],
-          ),
+          ), //Schrift und Kategorie 1. Reihe-> zweier Block - nebeneinander
+          Row(
+            children: [
+              Column(
+                children: [
+                  Text(
+                    'Aktien',
+                    style: TextStyle(fontFamily: 'Kategorien', fontSize: 20),
+                  ),
+                  Container(
+                    margin:
+                        EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+                    height: 90,
+                    width: 150,
+                    child: Kategorie(
+                        categorieBorderRadius: BorderRadius.only(
+                            topLeft: Radius.elliptical(10, 10),
+                            topRight: Radius.elliptical(10, 10),
+                            bottomLeft: Radius.elliptical(10, 10),
+                            bottomRight: Radius.elliptical(10, 10)),
+                        isTapped: () {},
+                        addCategorie: Icon(Icons.fingerprint_rounded)),
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  Text(
+                    'Aktien',
+                    style: TextStyle(fontFamily: 'Kategorien', fontSize: 20),
+                  ),
+                  Container(
+                    margin:
+                        EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+                    height: 90,
+                    width: 150,
+                    child: Kategorie(
+                        categorieBorderRadius: BorderRadius.only(
+                            topLeft: Radius.elliptical(10, 10),
+                            topRight: Radius.elliptical(10, 10),
+                            bottomLeft: Radius.elliptical(10, 10),
+                            bottomRight: Radius.elliptical(10, 10)),
+                        isTapped: () {},
+                        addCategorie: Image.asset(
+                          'assets/images/Aktien_plutos_images.png',
+                          fit: BoxFit.cover,
+                        )),
+                  ),
+                ],
+              ),
+            ],
+          ), //Schrift und Kategorie 2. Reihe-> zweier Block - nebeneinander
+          Row(
+            children: [
+              Column(
+                children: [
+                  Text(
+                    'Aktien',
+                    style: TextStyle(fontFamily: 'Kategorien', fontSize: 20),
+                  ),
+                  Container(
+                    margin:
+                        EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+                    height: 90,
+                    width: 150,
+                    child: Kategorie(
+                        categorieBorderRadius: BorderRadius.only(
+                            topLeft: Radius.elliptical(10, 10),
+                            topRight: Radius.elliptical(10, 10),
+                            bottomLeft: Radius.elliptical(10, 10),
+                            bottomRight: Radius.elliptical(10, 10)),
+                        isTapped: () {},
+                        addCategorie: Icon(Icons.fingerprint_rounded)),
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  Text(
+                    'Aktien',
+                    style: TextStyle(fontFamily: 'Kategorien', fontSize: 20),
+                  ),
+                  Container(
+                    margin:
+                        EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+                    height: 90,
+                    width: 150,
+                    child: Kategorie(
+                        categorieBorderRadius: BorderRadius.only(
+                            topLeft: Radius.elliptical(10, 10),
+                            topRight: Radius.elliptical(10, 10),
+                            bottomLeft: Radius.elliptical(10, 10),
+                            bottomRight: Radius.elliptical(10, 10)),
+                        isTapped: () {},
+                        addCategorie: Image.asset(
+                          'assets/images/Aktien_plutos_images.png',
+                          fit: BoxFit.cover,
+                        )),
+                  ),
+                ],
+              ),
+            ],
+          ), //Schrift und Kategorie 3. Reihe-> zweier Block - nebeneinander
+          Row(
+            children: [
+              Column(
+                children: [
+                  Text(
+                    'Aktien',
+                    style: TextStyle(fontFamily: 'Kategorien', fontSize: 20),
+                  ),
+                  Container(
+                    margin:
+                        EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+                    height: 90,
+                    width: 150,
+                    child: Kategorie(
+                        categorieBorderRadius: BorderRadius.only(
+                            topLeft: Radius.elliptical(10, 10),
+                            topRight: Radius.elliptical(10, 10),
+                            bottomLeft: Radius.elliptical(10, 10),
+                            bottomRight: Radius.elliptical(10, 10)),
+                        isTapped: () {},
+                        addCategorie: Icon(Icons.fingerprint_rounded)),
+                  ),
+                ],
+              ),
+              Column(
+                children: [
+                  Text(
+                    'Aktien',
+                    style: TextStyle(fontFamily: 'Kategorien', fontSize: 20),
+                  ),
+                  Container(
+                    margin:
+                        EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+                    height: 90,
+                    width: 150,
+                    child: Kategorie(
+                        categorieBorderRadius: BorderRadius.only(
+                            topLeft: Radius.elliptical(10, 10),
+                            topRight: Radius.elliptical(10, 10),
+                            bottomLeft: Radius.elliptical(10, 10),
+                            bottomRight: Radius.elliptical(10, 10)),
+                        isTapped: () {},
+                        addCategorie: Image.asset(
+                          'assets/images/Aktien_plutos_images.png',
+                          fit: BoxFit.cover,
+                        )),
+                  ),
+                ],
+              ),
+            ],
+          ), //Schrift und Kategorie 4. Reihe-> zweier Block - nebeneinander
+          Row(
+            children: [
+              Container(
+                width: 428,
+                height: 23,
+                child: Center(
+                  child: Container(
+                    child: DottedBorder(
+                      color: Colors.grey,
+                      borderType: BorderType.RRect,
+                      radius: Radius.circular(20),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20),
+                        child: Text(
+                          'Dein Wunschrechner',
+                          style:
+                              TextStyle(fontFamily: 'Kategorien', fontSize: 13),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ), //Dein Wunschrechner
+          Padding(padding: EdgeInsets.symmetric(vertical: 5)), //Abstandshalter
+          Row(
+            children: [
+              Column(
+                children: <Widget>[
+                  Container(
+                    width: 428,
+                    height: 0.1,
+                    decoration:
+                        BoxDecoration(border: Border.all(color: Colors.grey)),
+                  )
+                ],
+              )
+            ],
+          ), //Wunschrechnerleiste
         ],
       ),
     );

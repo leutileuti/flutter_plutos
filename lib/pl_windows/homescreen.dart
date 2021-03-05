@@ -13,7 +13,7 @@ class Homescreen extends StatelessWidget {
           'Plutos',
           style: TextStyle(
               fontFamily: 'Kategorien',
-              fontSize: 47.0,
+              fontSize: 47.1,
               color: Color(0xFF0c0e0f)),
         ),
         actions: <Widget>[

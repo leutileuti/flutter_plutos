@@ -30,6 +30,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
   dotted_border: ^1.0.7
+  random_string: ^2.1.0
 
 
 dev_dependencies:
@@ -45,6 +46,8 @@ flutter:
 
   assets:
     - assets/images/Aktien_plutos_images.png
+    - assets/images/home.png
+    - assets/images/024-left-8.png
 
   fonts:
     - family: Überschriften
@@ -54,6 +57,10 @@ flutter:
     - family: Kategorien
       fonts:
         - asset: fonts/rhodiumlibre-regular.ttf
+
+    - family: Weitere
+      fonts:
+        - asset: fonts/Aramis Italic.ttf
 
 
 

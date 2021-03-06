@@ -13,9 +13,7 @@ class Homescreen extends StatelessWidget {
         title: Text(
           'Plutos',
           style: TextStyle(
-              fontFamily: 'Kategorien',
-              fontSize: 47.1,
-              color: Color(0xFF0c0e0f)),
+              fontFamily: 'Kategorien', fontSize: 60, color: Color(0xFF0c0e0f)),
         ),
         actions: <Widget>[
           PopupMenuButton<String>(
@@ -331,7 +329,7 @@ class Homescreen extends StatelessWidget {
               ),
             ],
           ), //Dein Wunschrechner
-          Padding(padding: EdgeInsets.symmetric(vertical: 5)), //Abstandshalter
+          Padding(padding: EdgeInsets.symmetric(vertical: 10)), //Abstandshalter
           Row(
             children: [
               Column(
@@ -346,6 +344,37 @@ class Homescreen extends StatelessWidget {
               )
             ],
           ), //Wunschrechnerleiste
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  children: [
+                    Image.asset('assets/images/024-left-8.png', scale: 7),
+                  ],
+                ),
+              ),
+              SizedBox(
+                width: 70,
+              ),
+              Column(
+                children: [
+                  Image.asset('assets/images/home.png', scale: 8),
+                ],
+              ),
+              SizedBox(
+                width: 90,
+              ),
+              Column(
+                children: [
+                  Icon(
+                    Icons.search,
+                    size: 80,
+                  ),
+                ],
+              ),
+            ],
+          ), //Icons Unten
         ],
       ),
     );

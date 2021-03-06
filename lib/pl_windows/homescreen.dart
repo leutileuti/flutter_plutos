@@ -338,7 +338,7 @@ class Homescreen extends StatelessWidget {
                 children: <Widget>[
                   Container(
                     width: 428,
-                    height: 0.1,
+                    height: 0,
                     decoration:
                         BoxDecoration(border: Border.all(color: Colors.grey)),
                   )

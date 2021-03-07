@@ -9,17 +9,13 @@ class Homescreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
         backgroundColor: kAppbarColor,
-
         title: Text(
           'Plutos',
           style: TextStyle(
               fontFamily: 'Kategorien', fontSize: 60, color: Color(0xFF0c0e0f)),
         ),
-
         elevation: 0.0,
-
         actions: <Widget>[
           PopupMenuButton<String>(
             onSelected: choiceMenu,
@@ -308,7 +304,7 @@ class Homescreen extends StatelessWidget {
                 ],
               ),
             ],
-          ), //Schrift und Kategorie 4. Reihe-> zweier Block - nebeneinander
+          ), //Schrift und Kategorie 4. Reihe -> zweier Block - nebeneinander
           Row(
             children: [
               Container(

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_plutos/constance.dart';
-import 'package:flutter_plutos/pl_buttons/categories.dart';
 import 'package:flutter_plutos/pl_buttons/method_popupmenu.dart';
 import 'package:flutter_plutos/pl_hilfen/rechnernamen.dart';
 
-class AktienFenster extends StatelessWidget {
+class Immobilien extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,7 +11,7 @@ class AktienFenster extends StatelessWidget {
           backgroundColor: kAppbarColor,
           elevation: 0.0,
           title: Text(
-            'Börse',
+            'Immobilien',
             style: TextStyle(
                 fontFamily: 'Kategorien', fontSize: 51, color: Colors.white),
           ),
@@ -87,22 +86,15 @@ class AktienFenster extends StatelessWidget {
               ],
             ), //Suchleiste
             RechnerNamen(
-                grossbuchstabe: 'E',
+                grossbuchstabe: 'B',
+                rechnername: 'Baufinanzierungsrechner'), //Block B
+            RechnerNamen(
+                grossbuchstabe: 'K',
+                rechnername: 'Kaufen oder Mieten'), //Block K
+            RechnerNamen(
+                grossbuchstabe: 'W',
                 rechnername:
-                    'Exchange Traded Fund (ETF) - Fond - Vergleich'), //Block E
-            RechnerNamen(
-                grossbuchstabe: 'I',
-                rechnername: 'Inflationsrechner'), //Block I
-            RechnerNamen(
-                grossbuchstabe: 'O',
-                rechnername:
-                    'Optimierungsrechner für Steuerfreibetrag'), //Block O
-            RechnerNamen(
-                grossbuchstabe: 'R',
-                rechnername: 'Rebalancing Portfolio'), //Block R
-            RechnerNamen(
-                grossbuchstabe: 'S', rechnername: 'Sparplanrechner'), //Block S
-            RechnerNamen(grossbuchstabe: 'Z', rechnername: 'Zinsen'), //Block Z
+                    'Welches Haus kann ich mir wirklich leisten'), //Block W
           ],
         ));
   }

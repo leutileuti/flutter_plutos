@@ -9,12 +9,17 @@ class Homescreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+
         backgroundColor: kAppbarColor,
+
         title: Text(
           'Plutos',
           style: TextStyle(
               fontFamily: 'Kategorien', fontSize: 60, color: Color(0xFF0c0e0f)),
         ),
+
+        elevation: 0.0,
+
         actions: <Widget>[
           PopupMenuButton<String>(
             onSelected: choiceMenu,
@@ -336,7 +341,7 @@ class Homescreen extends StatelessWidget {
                 children: <Widget>[
                   Container(
                     width: 428,
-                    height: 0,
+                    height: 0.1,
                     decoration:
                         BoxDecoration(border: Border.all(color: Colors.grey)),
                   )
@@ -380,4 +385,3 @@ class Homescreen extends StatelessWidget {
     );
   }
 }
-//

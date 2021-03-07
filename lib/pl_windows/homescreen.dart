@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_plutos/constance.dart';
 import 'package:flutter_plutos/pl_buttons/categories.dart';
 import 'package:flutter_plutos/pl_buttons/method_popupmenu.dart';
+import 'package:flutter_plutos/pl_windows/b%C3%B6rse.dart';
 
 class Homescreen extends StatelessWidget {
   @override
@@ -128,7 +129,7 @@ class Homescreen extends StatelessWidget {
               Column(
                 children: [
                   Text(
-                    'Aktien',
+                    'Börse',
                     style: TextStyle(fontFamily: 'Kategorien', fontSize: 20),
                   ),
                   Container(
@@ -142,7 +143,12 @@ class Homescreen extends StatelessWidget {
                             topRight: Radius.elliptical(10, 10),
                             bottomLeft: Radius.elliptical(10, 10),
                             bottomRight: Radius.elliptical(10, 10)),
-                        isTapped: () {},
+                        isTapped: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => AktienFenster())
+                          );
+                        },
                         addCategorie: Image.asset(
                           'assets/images/Aktien_plutos_images.png',
                           fit: BoxFit.cover,
@@ -171,8 +177,13 @@ class Homescreen extends StatelessWidget {
                             topRight: Radius.elliptical(10, 10),
                             bottomLeft: Radius.elliptical(10, 10),
                             bottomRight: Radius.elliptical(10, 10)),
-                        isTapped: () {},
+                        isTapped: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => AktienFenster()),
+                          );
+                        },
                         addCategorie: Icon(Icons.fingerprint_rounded)),
+
+
                   ),
                 ],
               ),

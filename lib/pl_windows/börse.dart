@@ -9,6 +9,7 @@ class AktienFenster extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          automaticallyImplyLeading: true,
           backgroundColor: kAppbarColor,
           elevation: 0.0,
           title: Text(
@@ -114,8 +115,8 @@ class AktienFenster extends StatelessWidget {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-            showSelectedLabels: false,
-            showUnselectedLabels: false,
+            showSelectedLabels: false, // <-- HERE
+            showUnselectedLabels: false, // <-- AND HERE
             items: [
               BottomNavigationBarItem(
                   icon: ImageIcon(
@@ -123,7 +124,8 @@ class AktienFenster extends StatelessWidget {
                     size: 40,
                     color: Colors.black,
                   ),
-                  title: Text('Unnötig')),
+                  title: Text('Unnötig'),
+              ),
               BottomNavigationBarItem(
                   icon: ImageIcon(
                     AssetImage('assets/images/home.png'),

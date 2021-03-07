@@ -11,7 +11,7 @@ class AktienFenster extends StatelessWidget {
         backgroundColor: kAppbarColor,
         title: Text(
           'Aktien',
-          style: TextStyle(fontFamily: 'Kategorie', fontSize: 50),
+          style: TextStyle(fontFamily: 'Kategorie', fontSize: 51),
         ),
         actions: <Widget>[
           PopupMenuButton<String>(

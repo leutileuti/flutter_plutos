@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_plutos/pl_windows/aktien.dart';
 import 'package:flutter_plutos/pl_windows/homescreen.dart';
 import 'package:flutter_plutos/pl_windows/loadscreen.dart';
 
@@ -8,7 +9,7 @@ class Plutos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoadingScreen(),
+      home: Homescreen(),
     );
   }
 }

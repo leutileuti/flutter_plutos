@@ -4,7 +4,12 @@ import 'package:flutter_plutos/pl_buttons/method_popupmenu.dart';
 import 'package:flutter_plutos/pl_hilfen/rechnernamen.dart';
 import 'package:flutter_plutos/pl_windows/homescreen.dart';
 
-class Alltag extends StatelessWidget {
+class Alltag extends StatefulWidget {
+  @override
+  _AlltagState createState() => _AlltagState();
+}
+
+class _AlltagState extends State<Alltag> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,9 +59,9 @@ class Alltag extends StatelessWidget {
                     children: <Widget>[
                       Padding(
                           padding: EdgeInsets.symmetric(
-                        vertical: 0,
-                        horizontal: 5,
-                      )),
+                            vertical: 0,
+                            horizontal: 5,
+                          )),
                       Container(
                         child: Icon(Icons.search),
                       ),
@@ -66,9 +71,9 @@ class Alltag extends StatelessWidget {
                     children: <Widget>[
                       Padding(
                           padding: EdgeInsets.symmetric(
-                        vertical: 0,
-                        horizontal: 26,
-                      )),
+                            vertical: 0,
+                            horizontal: 26,
+                          )),
                       Container(
                         padding: const EdgeInsets.all(10.0),
                         child: Container(
@@ -111,6 +116,7 @@ class Alltag extends StatelessWidget {
         bottomNavigationBar: BottomNavigationBar(
             showSelectedLabels: false,
             showUnselectedLabels: false,
+            elevation: 0.0,
             currentIndex: 0,
             items: [
               BottomNavigationBarItem(
@@ -140,4 +146,6 @@ class Alltag extends StatelessWidget {
               ),
             ]));
   }
+
+
 }

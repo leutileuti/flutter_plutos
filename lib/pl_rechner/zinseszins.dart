@@ -47,7 +47,8 @@ class Zinseszinsrechner extends StatelessWidget {
                         topLeft: Radius.elliptical(10, 10),
                         topRight: Radius.elliptical(10, 10),
                         bottomLeft: Radius.elliptical(10, 10),
-                        bottomRight: Radius.elliptical(10, 10)),
+                        bottomRight: Radius.elliptical(10, 10),
+                    ),
                     ),
               ),
               Container(
@@ -184,6 +185,28 @@ class Zinseszinsrechner extends StatelessWidget {
               ),
             ],
           ),
+          Row(
+            children: [
+              Container(
+                margin:
+                EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0,),
+                child: Icon(Icons.arrow_forward),
+              ),
+              Container(
+                margin:
+                EdgeInsets.symmetric(horizontal: 60.0, vertical: 30.0),
+                height: 50,
+                width: 200,
+                child: Kategorie(
+                  categorieBorderRadius: BorderRadius.only(
+                      topLeft: Radius.elliptical(10, 10),
+                      topRight: Radius.elliptical(10, 10),
+                      bottomLeft: Radius.elliptical(10, 10),
+                      bottomRight: Radius.elliptical(10, 10)),
+                ),
+              ),
+            ],
+          )
         ],
 
       ),

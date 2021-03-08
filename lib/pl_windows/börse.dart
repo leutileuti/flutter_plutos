@@ -121,6 +121,7 @@ class AktienFenster extends StatelessWidget {
         bottomNavigationBar: BottomNavigationBar(
             showSelectedLabels: false, // <-- HERE
             showUnselectedLabels: false, // <-- AND HERE
+            elevation: 0.0,
             items: [
               BottomNavigationBarItem(
                 icon: ImageIcon(

@@ -392,39 +392,37 @@ class Homescreen extends StatelessWidget {
               )
             ],
           ), //Wunschrechnerleiste
-          Row(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Column(
-                  children: [
-                    Image.asset('assets/images/024-left-8.png', scale: 7),
-                  ],
-                ),
-              ),
-              SizedBox(
-                width: 70,
-              ),
-              Column(
-                children: [
-                  Image.asset('assets/images/home.png', scale: 8),
-                ],
-              ),
-              SizedBox(
-                width: 90,
-              ),
-              Column(
-                children: [
-                  Icon(
-                    Icons.search,
-                    size: 80,
-                  ),
-                ],
-              ),
-            ],
-          ), //Icons Unten
         ],
       ),
+        bottomNavigationBar: BottomNavigationBar(
+            showSelectedLabels: false, // <-- HERE
+            showUnselectedLabels: false, // <-- AND HERE
+            elevation: 0.0,
+            items: [
+              BottomNavigationBarItem(
+                icon: ImageIcon(
+                  AssetImage('assets/images/024-left-8.png'),
+                  size: 40,
+                  color: Colors.black,
+                ),
+                title: Text('Unnötig'),
+              ),
+              BottomNavigationBarItem(
+                  icon: ImageIcon(
+                    AssetImage('assets/images/home.png'),
+                    size: 40,
+                    color: Colors.black,
+                  ),
+                  title: Text('Unnötig')),
+              BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.search,
+                  color: Colors.black,
+                  size: 50,
+                ),
+                title: Text('unnötig'),
+              ),
+            ])
     );
   }
 }

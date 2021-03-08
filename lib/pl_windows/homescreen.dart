@@ -3,7 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_plutos/constance.dart';
 import 'package:flutter_plutos/pl_buttons/categories.dart';
 import 'package:flutter_plutos/pl_buttons/method_popupmenu.dart';
+import 'package:flutter_plutos/pl_windows/Steuer.dart';
+import 'package:flutter_plutos/pl_windows/alltag.dart';
 import 'package:flutter_plutos/pl_windows/b%C3%B6rse.dart';
+import 'package:flutter_plutos/pl_windows/immobilien.dart';
+import 'package:flutter_plutos/pl_windows/kredit.dart';
+import 'package:flutter_plutos/pl_windows/meine_finanzen.dart';
+import 'package:flutter_plutos/pl_windows/rente.dart';
+import 'package:flutter_plutos/pl_windows/sonstige.dart';
 
 class Homescreen extends StatelessWidget {
   @override
@@ -107,7 +114,7 @@ class Homescreen extends StatelessWidget {
               Column(
                 children: [
                   Text(
-                    'Aktien',
+                    'Alltag',
                     style: TextStyle(fontFamily: 'Kategorien', fontSize: 20),
                   ),
                   Container(
@@ -121,7 +128,12 @@ class Homescreen extends StatelessWidget {
                             topRight: Radius.elliptical(10, 10),
                             bottomLeft: Radius.elliptical(10, 10),
                             bottomRight: Radius.elliptical(10, 10)),
-                        isTapped: () {},
+                        isTapped: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Alltag()));
+                        },
                         addCategorie: Icon(Icons.fingerprint_rounded)),
                   ),
                 ],
@@ -145,9 +157,9 @@ class Homescreen extends StatelessWidget {
                             bottomRight: Radius.elliptical(10, 10)),
                         isTapped: () {
                           Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => AktienFenster())
-                          );
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => AktienFenster()));
                         },
                         addCategorie: Image.asset(
                           'assets/images/Aktien_plutos_images.png',
@@ -163,7 +175,7 @@ class Homescreen extends StatelessWidget {
               Column(
                 children: [
                   Text(
-                    'Aktien',
+                    'Immobilie',
                     style: TextStyle(fontFamily: 'Kategorien', fontSize: 20),
                   ),
                   Container(
@@ -178,19 +190,20 @@ class Homescreen extends StatelessWidget {
                             bottomLeft: Radius.elliptical(10, 10),
                             bottomRight: Radius.elliptical(10, 10)),
                         isTapped: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => AktienFenster()),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Immobilien()),
                           );
                         },
                         addCategorie: Icon(Icons.fingerprint_rounded)),
-
-
                   ),
                 ],
               ),
               Column(
                 children: [
                   Text(
-                    'Aktien',
+                    'Kredite',
                     style: TextStyle(fontFamily: 'Kategorien', fontSize: 20),
                   ),
                   Container(
@@ -204,7 +217,12 @@ class Homescreen extends StatelessWidget {
                             topRight: Radius.elliptical(10, 10),
                             bottomLeft: Radius.elliptical(10, 10),
                             bottomRight: Radius.elliptical(10, 10)),
-                        isTapped: () {},
+                        isTapped: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Kredit()));
+                        },
                         addCategorie: Image.asset(
                           'assets/images/Aktien_plutos_images.png',
                           fit: BoxFit.cover,
@@ -219,7 +237,7 @@ class Homescreen extends StatelessWidget {
               Column(
                 children: [
                   Text(
-                    'Aktien',
+                    'Rente',
                     style: TextStyle(fontFamily: 'Kategorien', fontSize: 20),
                   ),
                   Container(
@@ -233,7 +251,10 @@ class Homescreen extends StatelessWidget {
                             topRight: Radius.elliptical(10, 10),
                             bottomLeft: Radius.elliptical(10, 10),
                             bottomRight: Radius.elliptical(10, 10)),
-                        isTapped: () {},
+                        isTapped: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Rente()));
+                        },
                         addCategorie: Icon(Icons.fingerprint_rounded)),
                   ),
                 ],
@@ -241,7 +262,7 @@ class Homescreen extends StatelessWidget {
               Column(
                 children: [
                   Text(
-                    'Aktien',
+                    'Steuer',
                     style: TextStyle(fontFamily: 'Kategorien', fontSize: 20),
                   ),
                   Container(
@@ -255,7 +276,12 @@ class Homescreen extends StatelessWidget {
                             topRight: Radius.elliptical(10, 10),
                             bottomLeft: Radius.elliptical(10, 10),
                             bottomRight: Radius.elliptical(10, 10)),
-                        isTapped: () {},
+                        isTapped: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Steuer()));
+                        },
                         addCategorie: Image.asset(
                           'assets/images/Aktien_plutos_images.png',
                           fit: BoxFit.cover,
@@ -270,7 +296,7 @@ class Homescreen extends StatelessWidget {
               Column(
                 children: [
                   Text(
-                    'Aktien',
+                    'Sonstiges',
                     style: TextStyle(fontFamily: 'Kategorien', fontSize: 20),
                   ),
                   Container(
@@ -284,7 +310,12 @@ class Homescreen extends StatelessWidget {
                             topRight: Radius.elliptical(10, 10),
                             bottomLeft: Radius.elliptical(10, 10),
                             bottomRight: Radius.elliptical(10, 10)),
-                        isTapped: () {},
+                        isTapped: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Sonstige()));
+                        },
                         addCategorie: Icon(Icons.fingerprint_rounded)),
                   ),
                 ],
@@ -292,7 +323,7 @@ class Homescreen extends StatelessWidget {
               Column(
                 children: [
                   Text(
-                    'Aktien',
+                    'Meine Finanzen',
                     style: TextStyle(fontFamily: 'Kategorien', fontSize: 20),
                   ),
                   Container(
@@ -306,7 +337,12 @@ class Homescreen extends StatelessWidget {
                             topRight: Radius.elliptical(10, 10),
                             bottomLeft: Radius.elliptical(10, 10),
                             bottomRight: Radius.elliptical(10, 10)),
-                        isTapped: () {},
+                        isTapped: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => MeineFinanzen()));
+                        },
                         addCategorie: Image.asset(
                           'assets/images/Aktien_plutos_images.png',
                           fit: BoxFit.cover,

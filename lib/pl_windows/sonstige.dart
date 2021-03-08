@@ -8,7 +8,7 @@ class Sonstige extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          automaticallyImplyLeading: true,
+          automaticallyImplyLeading: false,
           backgroundColor: kAppbarColor,
           elevation: 0.0,
           title: Text(

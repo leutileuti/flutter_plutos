@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_plutos/constance.dart';
 import 'package:flutter_plutos/pl_buttons/method_popupmenu.dart';
 import 'package:flutter_plutos/pl_hilfen/rechnernamen.dart';
+import 'package:flutter_plutos/pl_windows/homescreen.dart';
 
 class Alltag extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          automaticallyImplyLeading: true,
+          automaticallyImplyLeading: false,
           backgroundColor: kAppbarColor,
           elevation: 0.0,
           title: Text(
@@ -108,8 +109,9 @@ class Alltag extends StatelessWidget {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-            showSelectedLabels: false, // <-- HERE
-            showUnselectedLabels: false, // <-- AND HERE
+            showSelectedLabels: false,
+            showUnselectedLabels: false,
+            currentIndex: 0,
             items: [
               BottomNavigationBarItem(
                 icon: ImageIcon(
@@ -127,10 +129,12 @@ class Alltag extends StatelessWidget {
                   ),
                   title: Text('Unnötig')),
               BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.search,
-                  color: Colors.black,
-                  size: 50,
+                icon: IconButton(
+                  icon: Icon(
+                    Icons.search,
+                    color: Colors.black,
+                    size: 60,
+                  ),
                 ),
                 title: Text('unnötig'),
               ),

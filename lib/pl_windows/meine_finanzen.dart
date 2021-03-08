@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_plutos/constance.dart';
-import 'package:flutter_plutos/pl_buttons/categories.dart';
 import 'package:flutter_plutos/pl_buttons/method_popupmenu.dart';
 import 'package:flutter_plutos/pl_hilfen/rechnernamen.dart';
 
-class AktienFenster extends StatelessWidget {
+class MeineFinanzen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,9 +12,9 @@ class AktienFenster extends StatelessWidget {
           backgroundColor: kAppbarColor,
           elevation: 0.0,
           title: Text(
-            'Börse',
+            'Meine Finanzen',
             style: TextStyle(
-                fontFamily: 'Kategorien', fontSize: 51, color: Colors.white),
+                fontFamily: 'Kategorien', fontSize: 40, color: Colors.white),
           ),
           actions: <Widget>[
             PopupMenuButton<String>(
@@ -87,29 +86,6 @@ class AktienFenster extends StatelessWidget {
                     ],
                   )
                 ],
-              ), //Suchleiste
-              RechnerNamen(
-                  grossbuchstabe: 'E',
-                  rechnername:
-                      'Exchange Traded Fund (ETF) - Fond - Vergleich'), //Block E
-              RechnerNamen(
-                  grossbuchstabe: 'I',
-                  rechnername: 'Inflationsrechner'), //Block I
-              RechnerNamen(
-                  grossbuchstabe: 'O',
-                  rechnername:
-                      'Optimierungsrechner für Steuerfreibetrag'), //Block O
-              RechnerNamen(
-                  grossbuchstabe: 'R',
-                  rechnername: 'Rebalancing Portfolio'), //Block R
-              RechnerNamen(
-                  grossbuchstabe: 'S',
-                  rechnername: 'Sparplanrechner'), //Block S
-              RechnerNamen(
-                  grossbuchstabe: 'Z', rechnername: 'Zinsen'), //Block Z
-              SizedBox(
-                height: 500,
-                width: 200,
               ),
             ],
           ),

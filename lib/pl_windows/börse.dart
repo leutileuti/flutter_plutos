@@ -32,6 +32,10 @@ class AktienFenster extends StatelessWidget {
           ],
         ),
         body: SingleChildScrollView(
+          controller: ScrollController(
+            initialScrollOffset: 1000.0,
+            keepScrollOffset: false,
+          ),
           child: Column(
             children: [
               Row(
